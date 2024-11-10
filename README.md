@@ -10,7 +10,7 @@ npm install
 second command : 
 npm install axios react react-dom react-router-dom
 
-after this you can run the frontend and for you need to run the command : 
+after this you can run the frontend and for that you need to run the command : 
 npm start
 
 
@@ -21,7 +21,7 @@ npm install
 second command : 
 npm install express mongoose jsonwebtoken bcryptjs dotenv cors
 
-after this you can run the backend and for you need to run the command : 
+after this you can run the backend and for that you need to run the command : 
 nodemon app.js
 
 
