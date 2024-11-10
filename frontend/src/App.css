@@ -1,0 +1,307 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #333;
+}
+
+.task-form,
+.task-list {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.task-form h2,
+.task-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  width:98%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.task-form .button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-button,
+.cancel-button,
+.logout-button,
+.add-task-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.submit-button {
+  background-color: #28a745;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
+.logout-button {
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+.add-task-button {
+  background-color: #17a2b8;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #138496;
+}
+
+.task-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-list th,
+.task-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-list th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.task-list td button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.task-list td button:first-of-type {
+  background-color: #007bff;
+}
+
+.task-list td button:last-of-type {
+  background-color: #dc3545;
+}
+
+/* Update button styles for TaskList and TaskForm */
+
+/* Buttons inside TaskForm */
+.submit-button,
+.cancel-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.logout-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  width:10%;
+}
+
+.submit-button {
+  background-color: #1ce64b;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #c82333;
+}
+
+.logout-button {
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #0056b3;
+}
+
+/* Buttons inside TaskList for editing and deleting */
+.edit-button,
+.delete-button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #007bff;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Container and form styling for the auth page */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f7f6;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.auth-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  transition: border-color 0.3s ease;
+}
+
+.auth-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submit-button {
+  background-color: #125b13;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-button {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  width: 37%;
+}
+
+.toggle-button:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .auth-container {
+    padding: 10px;
+  }
+
+  .auth-form {
+    padding: 8px;
+  }
+
+  button {
+    font-size: 8px;
+  }
+}
+
