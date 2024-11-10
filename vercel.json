@@ -1,0 +1,19 @@
+{
+    "projects": {
+      "frontend": {
+        "src": "frontend",
+        "buildCommand": "npm install && npm run build",
+        "outputDirectory": "frontend/build"
+      },
+      "backend": {
+        "src": "backend",
+        "buildCommand": "npm install",
+        "outputDirectory": "backend"
+      }
+    },
+    "routes": [
+      { "src": "/api/(.*)", "dest": "/backend/app.js" },
+      { "src": "/(.*)", "dest": "/frontend/build/$1" }
+    ]
+  }
+  
